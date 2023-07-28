@@ -1,0 +1,15 @@
+#topbar {
+    position: absolute;
+    width: calc(100% - 70px);
+    height: 50px;
+    top: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    padding-inline: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content {
+    margin-top: 50px;
+}
