@@ -1,8 +1,7 @@
 import { redirect } from "@sveltejs/kit";
 
 export async function load({ locals }) {
-    console.log(locals.user);
-    if (!locals.user.admin) {
+    if (!locals.user || !locals.user.admin) {
         throw redirect(303, "/");
     }
     else {
